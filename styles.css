@@ -30,29 +30,6 @@ img, picture, svg, video {
     max-width: 100%;
 }
 
-body {
-    /* flex-grow: 1; */
-    /* line-height: 1.5; */
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word; /* Might cause issues */
-}
-
-h1, h2, h3 {
-    line-height: 1.1;
-}
-
-p {
-    font-size: 1.125rem;
-}
-
 #root, #__next {
     isolation: isolate;
 }
@@ -69,53 +46,99 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* max-width: 24em;
-    max-height: 3em; */
-    /* width: 24em;
-    height: 3em; */
+    height: 100vh;
 }
 
 .product {
-    --content-padding: 1.5rem;
-    --content-spacing: 1rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 26em; */
-    margin: auto;
+    width: 25em;
+    height: 42em;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 1rem;
-    /* overflow: hidden;  */
+    border-radius: 1em;
 }
 
 picture {
-    max-width: 390px;
-    margin: 1.5rem auto 0 auto;
+    margin: 1.2em;
 }
 
-img {
-    border-radius: 1rem;
+.equilibrium {
+    border-radius: 1em;
+    width: auto;
+    height: auto;
+
 }
 
 .product__title {
-    color: white;
     font-weight: 600;
-    margin: 1.8rem 0 .5rem 1.5rem;
     font-size: 1.5rem;
+    color: #fff;
+    margin-left: 0.85em;
 }
 
 .product__description {
-    margin: 1rem 0 0 1.5rem;
-    overflow-wrap: break-word;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-.bottom {
-    margin: 0 0 0 1.5rem;
+    margin: 1em 0 0 1.2em;
+    font-size: 1.1rem;
 }
 
-/*.flex-group {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
+.bottom {
+    margin-top: 0.2em;
+}
+
+.flex-group {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1.2em;
+    justify-content: space-between;
+}
+
+.cost {
+    display: flex;
+}
+
+.time-left {
+    display: flex;
+    margin-right: 1em;
+}
+
+.product__price {
+    margin-left: 0.5em;
+    color: var(--clr-primary-cyan);
+    font-size: 1.1rem;
+}
+
+.days-left {
+    margin-left: 0.5em;
+}
+
+.line {
+    width: 22em;
+    background-color: var(--clr-primary-softblue);
+    opacity: 40%;
+    height: 1px;
+    margin: 1.8em auto;
+    margin-bottom: 0;
+}
+
+.product__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5em 0 0 0.4em;
+}
+
+.author-picture {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 3rem;
+    height: auto;
+}
+
+:where(.jules-link, .jules.link:visited) {
+    color: #fff;
+    text-decoration: none;
+}
+
+.jules-link:hover,
+.jules-link:focus {
+    color: var(--clr-primary-cyan);
+    transition: .8s;
+}

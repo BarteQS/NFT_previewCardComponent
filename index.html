@@ -13,7 +13,7 @@
     <article class="product">
       <picture>
         <img src="images/image-equilibrium.jpg"
-             alt="A transparent dice on a blueish background">
+             alt="A transparent dice on a blueish background" width="604" height="604" class="equilibrium">
       </picture>
 
       <div class="product__content">
@@ -23,17 +23,25 @@
           <p class="product__description bottom">balance and calm.</p>
 
         <div class="flex-group">
-          <img src="images/icon-ethereum.svg" alt="Ethereum icon">
-          <p class="product__price">0.041 ETH</p>
-          <img src="images/icon-clock.svg" alt="Clock icon">
+          <div class="cost">
+            <img src="images/icon-ethereum.svg" alt="Ethereum icon" width="11" height="18">
+            <p class="product__price">0.041 ETH</p>
+          </div>
+          
+          <div class="time-left">
+            <img src="images/icon-clock.svg" alt="Clock icon" width="17" height="17">
           <p class="days-left">3 days left</p>
+          </div>
+          
         </div>
 
         <div class="line"></div>
 
         <div class="product__author">
-          <picture><img src="images/image-avatar.png" alt="Portrait of a man"></picture>
-          <p>Creation of Jules Wyvern</p>
+          <picture>
+            <img src="images/image-avatar.png" alt="Portrait of a man" width="132" height="132" class="author-picture">
+          </picture>
+          <p>Creation of <a href="#" class="jules-link">Jules Wyvern</a></p>
         </div>
 
       </div>
