@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --clr-primary-softblue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+
+    --ff-base: 'Outfit', sans-serif, serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semibold: 500;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    /* flex-grow: 1; */
+    /* line-height: 1.5; */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word; /* Might cause issues */
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: 'Outfit', sans-serif, serif;
+    font-weight: var(--fw-regular);
+    color: var(--clr-primary-softblue);
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 24em;
+    max-height: 3em; */
+    /* width: 24em;
+    height: 3em; */
+}
+
+.product {
+    --content-padding: 1.5rem;
+    --content-spacing: 1rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 26em; */
+    margin: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    /* overflow: hidden;  */
+}
+
+picture {
+    max-width: 390px;
+    margin: 1.5rem auto 0 auto;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.product__title {
+    color: white;
+    font-weight: 600;
+    margin: 1.8rem 0 .5rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.product__description {
+    margin: 1rem 0 0 1.5rem;
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.bottom {
+    margin: 0 0 0 1.5rem;
+}
+
+/*.flex-group {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
