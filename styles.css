@@ -93,10 +93,12 @@ picture {
 
 .cost {
     display: flex;
+    align-items: center;
 }
 
 .time-left {
     display: flex;
+    align-items: center;
     margin-right: 1em;
 }
 
