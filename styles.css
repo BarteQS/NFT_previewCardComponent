@@ -148,6 +148,7 @@ picture {
 :where(.jules-link, .jules.link:visited) {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .jules-link:hover,
@@ -156,7 +157,6 @@ picture {
     transition: .8s;
 }
 
-/* TODO Design the hover effects for the equilibrium image and heading. */
 .image-container::before {
     content: '';
     position: absolute;
@@ -166,17 +166,31 @@ picture {
     right: 0;
     bottom: 0;
     border-radius: 1em;
-    opacity: 0; /* 0.4 */
+    opacity: 0; 
 }
 
 .image-container:hover::before {
     opacity: 0.4;
-    transition: 0.8s;
+    transition: .8s;
     cursor: pointer;
 }
 
 .product__title:hover {
     color: var(--clr-primary-cyan);
     cursor: pointer;
-    transition: color 0.8s;
+    transition: color .8s;
+}
+
+.image-container::after {
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image-container:hover::after {
+    opacity: 1;
+    transition: 1s;
 }
