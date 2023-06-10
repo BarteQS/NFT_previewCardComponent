@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | NFT preview card component</title>
-</head>
-<body>
-  <main>
-    <h1 class="sr-only">NFT Card Component</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <article class="product">
-      <picture>
-        <div class="image-container">
-          <img src="images/image-equilibrium.jpg"
-          alt="A transparent dice on a blueish background" width="604" height="604" class="equilibrium">
-        </div>
-      </picture>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-      <div class="product__content">
-        <p class="product__title">Equilibrium #3429</p>
-
-        <p class="product__description">Our Equilibrium collection promotes</p>
-        <p class="product__description bottom">balance and calm.</p>
-
-        <div class="flex-group">
-          <div class="cost">
-            <img src="images/icon-ethereum.svg" alt="Ethereum icon" width="11" height="18">
-            <p class="product__price">0.041 ETH</p>
+    <title>NFT preview card component</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">NFT Card Component</h1>
+      <article class="card">
+        <div class="card__photo">
+          <button class="card__button">
+            <img
+              src="./images/image-equilibrium.jpg"
+              alt="A transparent dice on a blueish background"
+            />
+          </button>
+          <div class="active-state">
+            <img src="./images/icon-view.svg" alt="Eye icon" />
           </div>
-          
-          <div class="time-left">
-            <img src="images/icon-clock.svg" alt="Clock icon" width="17" height="17">
-          <p class="days-left">3 days left</p>
-          </div>
-          
         </div>
 
-        <div class="line"></div>
-
-        <div class="product__author">
-          <picture>
-            <img src="images/image-avatar.png" alt="Portrait of a man" width="132" height="132" class="author-picture">
-          </picture>
-          <p>Creation of <span class="jules-link">Jules Wyvern</span></p>
+        <p class="card__id">
+          <a href="#" class="card__id-link">Equilibrium #3429</a>
+        </p>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="flex-item">
+          <p class="card__value">0.041 ETH</p>
+          <p class="card__time">3 days left</p>
         </div>
 
-      </div>
-    </article>
-  </main>
-</body>
+        <div class="card__line"></div>
+
+        <div class="card__credits">
+          <img
+            src="./images/image-avatar.png"
+            alt="Avatar of a boy, the author"
+          />
+          <p>
+            Creation of <a href="#" class="card__author-link">Jules Wyvern</a>
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
